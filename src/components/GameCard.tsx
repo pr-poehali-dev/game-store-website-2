@@ -131,9 +131,12 @@ export default function GameCard({
       </CardContent>
 
       <CardFooter className="p-4 pt-0">
-        <Button className="w-full font-bold text-base group-hover:glow-neon transition-all">
+        <Button 
+          className="w-full font-bold text-base group-hover:glow-neon transition-all"
+          onClick={() => window.open('https://t.me/straxdoksmaks', '_blank')}
+        >
           <Icon name="ShoppingCart" size={18} className="mr-2" />
-          В КОРЗИНУ
+          КУПИТЬ
         </Button>
       </CardFooter>
     </Card>
