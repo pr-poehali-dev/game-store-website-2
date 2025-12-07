@@ -1,18 +1,7 @@
-import { useState } from 'react';
 import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Input } from '@/components/ui/input';
 import Icon from '@/components/ui/icon';
-import {
-  Sheet,
-  SheetContent,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
-} from '@/components/ui/sheet';
 
 export default function Header() {
-  const [cartCount] = useState(0);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -43,30 +32,6 @@ export default function Header() {
           </div>
 
           <div className="flex items-center gap-3">
-            <Sheet>
-              <SheetTrigger asChild>
-                <Button variant="outline" size="icon" className="relative">
-                  <Icon name="ShoppingCart" size={20} />
-                  {cartCount > 0 && (
-                    <Badge className="absolute -top-2 -right-2 h-5 w-5 flex items-center justify-center p-0 bg-secondary text-xs animate-pulse-glow">
-                      {cartCount}
-                    </Badge>
-                  )}
-                </Button>
-              </SheetTrigger>
-              <SheetContent>
-                <SheetHeader>
-                  <SheetTitle>Корзина</SheetTitle>
-                </SheetHeader>
-                <div className="mt-8 space-y-4">
-                  <div className="text-center py-12 text-muted-foreground">
-                    <Icon name="ShoppingCart" size={48} className="mx-auto mb-4 opacity-50" />
-                    <p>Корзина пуста</p>
-                  </div>
-                </div>
-              </SheetContent>
-            </Sheet>
-
             <Button variant="outline" size="icon" className="md:hidden">
               <Icon name="Menu" size={20} />
             </Button>
