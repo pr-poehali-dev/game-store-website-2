@@ -9,13 +9,7 @@ interface FilterBarProps {
 
 export default function FilterBar({ activeFilter, onFilterChange }: FilterBarProps) {
   const filters = [
-    { id: 'all', label: 'Все игры', icon: 'Grid3x3' },
-    { id: 'new', label: 'Новинки', icon: 'Sparkles' },
-    { id: 'discount', label: 'Скидки', icon: 'Percent' },
-    { id: 'top', label: 'Топ продаж', icon: 'TrendingUp' },
-    { id: 'action', label: 'Экшен', icon: 'Swords' },
-    { id: 'rpg', label: 'RPG', icon: 'Wand2' },
-    { id: 'strategy', label: 'Стратегии', icon: 'Target' },
+    { id: 'all', label: 'Все товары', icon: 'Grid3x3' },
   ];
 
   return (
@@ -43,12 +37,8 @@ export default function FilterBar({ activeFilter, onFilterChange }: FilterBarPro
         <div className="flex items-center justify-between mt-4">
           <div className="flex items-center gap-2 text-sm text-muted-foreground">
             <Icon name="Package" size={16} />
-            <span>Найдено: <Badge variant="secondary">127 игр</Badge></span>
+            <span>Найдено: <Badge variant="secondary">3 товара</Badge></span>
           </div>
-          <Button variant="ghost" size="sm" className="text-sm">
-            <Icon name="SlidersHorizontal" size={16} className="mr-2" />
-            Фильтры
-          </Button>
         </div>
       </div>
     </div>
