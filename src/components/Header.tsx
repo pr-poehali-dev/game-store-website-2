@@ -23,7 +23,10 @@ export default function Header() {
                 Каталог
               </a>
               <button
-                onClick={() => window.open('https://t.me/straxdoksmaks', '_blank')}
+                onClick={() => {
+                  const message = 'Здравствуйте! Можете помочь?';
+                  window.open(`https://t.me/straxdoksmaks?text=${encodeURIComponent(message)}`, '_blank');
+                }}
                 className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
               >
                 Поддержка
