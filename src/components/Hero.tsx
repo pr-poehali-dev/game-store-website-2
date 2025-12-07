@@ -22,10 +22,7 @@ export default function Hero() {
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            Тысячи игр для PC, PlayStation, Xbox и Nintendo Switch. 
-            Мгновенная доставка, гарантия лучшей цены и круглосуточная поддержка.
-          </p>
+
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
             <Button size="lg" className="font-bold text-lg px-8 glow-neon group">
