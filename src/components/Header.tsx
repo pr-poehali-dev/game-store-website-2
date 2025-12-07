@@ -43,20 +43,6 @@ export default function Header() {
           </div>
 
           <div className="flex items-center gap-3">
-            <div className="hidden sm:flex items-center gap-2 flex-1 max-w-md">
-              <div className="relative flex-1">
-                <Icon
-                  name="Search"
-                  size={18}
-                  className="absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground"
-                />
-                <Input
-                  placeholder="Поиск игр..."
-                  className="pl-10 bg-muted/50 border-border/50 focus:border-primary"
-                />
-              </div>
-            </div>
-
             <Sheet>
               <SheetTrigger asChild>
                 <Button variant="outline" size="icon" className="relative">
