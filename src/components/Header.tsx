@@ -33,24 +33,12 @@ export default function Header() {
               >
                 Каталог
               </a>
-              <a
-                href="#new"
-                className="text-sm font-medium text-muted-foreground hover:text-accent transition-colors"
-              >
-                Новинки
-              </a>
-              <a
-                href="#sales"
-                className="text-sm font-medium text-muted-foreground hover:text-secondary transition-colors"
-              >
-                Скидки
-              </a>
-              <a
-                href="#support"
+              <button
+                onClick={() => window.open('https://t.me/straxdoksmaks', '_blank')}
                 className="text-sm font-medium text-muted-foreground hover:text-primary transition-colors"
               >
                 Поддержка
-              </a>
+              </button>
             </nav>
           </div>
 
