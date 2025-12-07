@@ -12,10 +12,10 @@ export default function Footer() {
               <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center glow-neon">
                 <Icon name="Gamepad2" size={24} className="text-primary-foreground" />
               </div>
-              <span className="font-bold text-xl text-glow">GAME STORE</span>
+              <span className="font-bold text-xl text-glow">GREEN RUSSIA SHOP</span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Крупнейший магазин цифровых игр в России. Быстро, безопасно, выгодно.
+              Магазин игровых услуг. Разбан, размут, донат. Быстро и надёжно.
             </p>
             <div className="flex gap-3">
               <Button variant="outline" size="icon" className="hover:border-primary/50">
@@ -100,7 +100,7 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-border/50 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted-foreground">
-          <p>&copy; 2024 Game Store. Все права защищены.</p>
+          <p>&copy; 2024 Green Russia Shop. Все права защищены.</p>
           <div className="flex gap-6">
             <a href="#" className="hover:text-primary transition-colors">
               Политика конфиденциальности

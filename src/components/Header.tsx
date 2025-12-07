@@ -23,7 +23,7 @@ export default function Header() {
               <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center glow-neon">
                 <Icon name="Gamepad2" size={24} className="text-primary-foreground" />
               </div>
-              <span className="font-bold text-xl hidden sm:inline text-glow">GAME STORE</span>
+              <span className="font-bold text-xl hidden sm:inline text-glow">GREEN RUSSIA SHOP</span>
             </a>
 
             <nav className="hidden md:flex items-center gap-6">
