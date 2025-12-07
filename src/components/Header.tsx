@@ -9,8 +9,8 @@ export default function Header() {
         <div className="flex h-16 items-center justify-between gap-4">
           <div className="flex items-center gap-8">
             <a href="/" className="flex items-center gap-2 group">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center glow-neon">
-                <Icon name="Gamepad2" size={24} className="text-primary-foreground" />
+              <div className="w-10 h-10 bg-green-500 rounded-lg flex items-center justify-center glow-neon">
+                <span className="text-2xl font-bold text-white">G</span>
               </div>
               <span className="font-bold text-xl hidden sm:inline text-glow">GREEN RUSSIA SHOP</span>
             </a>
