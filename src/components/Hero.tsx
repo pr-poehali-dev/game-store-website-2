@@ -28,10 +28,7 @@ export default function Hero() {
               <Icon name="TrendingUp" size={20} className="mr-2 group-hover:rotate-12 transition-transform" />
               Популярное
             </Button>
-            <Button size="lg" variant="outline" className="font-bold text-lg px-8 border-2 border-white text-white hover:bg-white/10">
-              <Icon name="Percent" size={20} className="mr-2" />
-              Скидки до 80%
-            </Button>
+            <Button size="lg" variant="outline" className="font-bold text-lg px-8 border-2 border-white text-white hover:bg-white/10">Скидка до 25%</Button>
           </div>
 
           <div className="grid grid-cols-3 gap-8 pt-12 max-w-2xl mx-auto">
