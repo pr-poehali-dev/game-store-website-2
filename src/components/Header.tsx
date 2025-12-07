@@ -12,7 +12,7 @@ import {
 } from '@/components/ui/sheet';
 
 export default function Header() {
-  const [cartCount] = useState(3);
+  const [cartCount] = useState(0);
 
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/50 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -59,27 +59,9 @@ export default function Header() {
                   <SheetTitle>Корзина</SheetTitle>
                 </SheetHeader>
                 <div className="mt-8 space-y-4">
-                  <div className="flex items-center gap-4 p-4 rounded-lg bg-muted/50 border border-border/30">
-                    <div className="w-16 h-16 bg-primary/20 rounded flex items-center justify-center">
-                      <Icon name="Image" size={24} className="text-primary" />
-                    </div>
-                    <div className="flex-1">
-                      <h4 className="font-medium">Cyberpunk 2077</h4>
-                      <p className="text-sm text-muted-foreground">1999 ₽</p>
-                    </div>
-                    <Button variant="ghost" size="icon">
-                      <Icon name="Trash2" size={18} />
-                    </Button>
-                  </div>
-                  <div className="pt-4 border-t border-border">
-                    <div className="flex justify-between mb-4">
-                      <span className="font-bold">Итого:</span>
-                      <span className="font-bold text-xl text-primary">5997 ₽</span>
-                    </div>
-                    <Button className="w-full font-bold">
-                      <Icon name="CreditCard" size={18} className="mr-2" />
-                      Оформить заказ
-                    </Button>
+                  <div className="text-center py-12 text-muted-foreground">
+                    <Icon name="ShoppingCart" size={48} className="mx-auto mb-4 opacity-50" />
+                    <p>Корзина пуста</p>
                   </div>
                 </div>
               </SheetContent>
